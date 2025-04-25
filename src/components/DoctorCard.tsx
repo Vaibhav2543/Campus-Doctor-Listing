@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Doctor } from '@/types/doctor';
 import { Button } from '@/components/ui/button';
@@ -45,7 +46,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
         <div className="space-y-2">
           <div className="flex items-center text-sm text-gray-600 gap-1">
             <Clock className="h-4 w-4 text-gray-400" />
-            <span data-testid="doctor-experience">{doctor.experience} yrs exp.</span>
+            <span data-testid="doctor-experience">{doctor.experience} yrs exp</span>
           </div>
           
           <div className="flex items-center text-sm text-gray-600 gap-1">
@@ -59,7 +60,7 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
         {/* Book appointment button */}
         <div className="flex justify-end">
           <Button 
-            className="w-1/3 bg-white border border-blue-500 text-blue-500 hover:bg-blue-50" 
+            className="w-1/3 bg-white border border-blue-500 text-blue-500 hover:bg-blue-50 py-2.5 px-4" 
             variant="outline"
           >
             Book Appointment
@@ -71,3 +72,4 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
 };
 
 export default DoctorCard;
+
