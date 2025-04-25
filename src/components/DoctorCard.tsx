@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Doctor } from '@/types/doctor';
 import { Button } from '@/components/ui/button';
@@ -58,12 +57,14 @@ const DoctorCard: React.FC<DoctorCardProps> = ({ doctor }) => {
         </div>
 
         {/* Book appointment button */}
-        <Button 
-          className="w-full bg-blue-500 hover:bg-blue-600 text-white" 
-          variant="default"
-        >
-          Book Appointment
-        </Button>
+        <div className="flex justify-end">
+          <Button 
+            className="w-1/3 bg-white border border-blue-500 text-blue-500 hover:bg-blue-50" 
+            variant="outline"
+          >
+            Book Appointment
+          </Button>
+        </div>
       </div>
     </div>
   );
